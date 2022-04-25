@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+.container {
+    padding: 20px;
+    padding-top: 50px;
+    width: 300px;
+    height: 150px;
+    margin: auto;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 5px 5px gray;
+    background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.counter {
+    margin-top: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* .buttonPlus {
+    width: 20px;
+    height: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.buttonMinus {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 2px solid brown;
+    border-radius: 5px;
+} */
+
+.loadingCont {
+    height: 50px;
+    margin-top: 10px;
+    /* background-color: black; */
 }
 
-.App-link {
-  color: #61dafb;
+.loading {
+    width: 90%;
+    margin: auto;
+    display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loading-text {
+    margin-left: 20px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px dotted black;
+}
+
+.button {
+    width: 300px;
+    height: 70px;
+    border: 2px solid brown;
+    margin: auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.button>div {
+    color: brown;
+    width: 33%;
+    font-size: 30px;
+    padding-top: 10px;
+    font-weight: bolder;
+}
+
+.button>input {
+    width: 33%;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 40px;
+    font-weight: bolder;
+    background-color: rgb(212, 165, 165);
+    color: brown;
+    border: none;
+}
+
+.button>div:nth-child(1) {
+    border-left: 20px;
+    border-right: 2px solid brown;
+}
+
+.button>div:nth-child(3) {
+    /* border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px; */
+    border-left: 2px solid brown;
+    background-color: brown;
+    color: white;
+}
+
+.button>div:nth-child(2) {
+    background-color: rgb(212, 165, 165);
 }
